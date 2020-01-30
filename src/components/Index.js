@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import Router from 'next/router';
+import Router from 'next/router'; 
 import Octicon, { MarkGithub } from '@primer/octicons-react';
 import '../css/index.css';
 function Index() {

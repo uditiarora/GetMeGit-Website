@@ -2,7 +2,7 @@ div {
     display: flex;
     justify-content: space-between;
     background-color: black;
-    background-image: linear-gradient(black 0%, rgb(34, 33, 33) 100%);
+    background-image: linear-gradient(black 0%, rgb(49, 48, 48) 100%);
     color: rgb(245, 237, 237);
     height: 100vh;
     margin: auto;
@@ -19,11 +19,13 @@ form {
 label {
     display: block;
     font-size: 2.5rem;
+    font-family: Candara;
     font-weight: 500;
     margin: 2rem;
+    text-align: center;
 }
 input {
-    background-color: #26303c;
+    background-color: #1c232c;
     outline: 0;
     border: 0;
     border-radius: 0.25rem;
@@ -32,7 +34,7 @@ input {
     margin: 0 auto;
     padding: 1rem;
     color: rgb(245, 237, 237);
-    font-family: monospace;
+    font-family: Candara;
     font-size: 2rem;
     font-weight: 400;
     text-align: center;
