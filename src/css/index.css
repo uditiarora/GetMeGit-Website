@@ -1,6 +1,6 @@
-div {
+.index_div {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     background-color: black;
     background-image: linear-gradient(black 0%, rgb(49, 48, 48) 100%);
     color: rgb(245, 237, 237);
