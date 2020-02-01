@@ -3,7 +3,7 @@ import React from 'react';
 function User(props){
     return(
         <div>
-            {props.location.state.usern}
+            {props.location.state.username}
         </div>
     );
 }

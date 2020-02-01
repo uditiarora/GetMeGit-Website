@@ -10,7 +10,7 @@ function Index() {
     history.push({
       pathname: '/user',
       search: '?query='+ {username},
-      state: { usern: username}
+      state: { username: username}
     });
   }
     return (      
