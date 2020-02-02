@@ -1,5 +1,4 @@
 import React, {useState} from 'react';
-import Router from 'next/router'; 
 import Octicon, { MarkGithub } from '@primer/octicons-react';
 import history from '../history';
 import '../css/index.css';
