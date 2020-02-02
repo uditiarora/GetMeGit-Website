@@ -1,10 +1,16 @@
-import React from 'react';
+import React, {Component} from 'react';
 
-function User(props){
-    return(
-        <div>
-            {props.location.state.username}
-        </div>
-    );
+class User extends Component{
+    constructor(props){
+        super(props);
+    }
+    render(){
+        return(
+            <div>
+                {this.props.location.state.username}
+            </div>
+        );
+    }
+    
 }
 export default User;
