@@ -6,9 +6,15 @@ class User extends Component{
     }
     render(){
         return(
-            <div>
-                {this.props.location.state.username}
+            <div className="row">
+                <div className="col-md-4">
+                    hello
+                </div>
+                <div className="col-md-8">
+                    {this.props.location.state.username}
+                </div>
             </div>
+            
         );
     }
     
