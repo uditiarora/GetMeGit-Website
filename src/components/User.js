@@ -1,8 +1,7 @@
 import React, { useState, useEffect } from 'react';
-import PropTypes from 'prop-types';
 import '../css/user.css';
 import GhPolyglot from 'gh-polyglot';
-
+import UserInfo from './UserInfo';
 const User = props => {
     const username = props.location.state.username;
     const [userData, setUserData] = useState(null);
@@ -77,7 +76,9 @@ const User = props => {
     return(
         <div className="row">
             <div className="col-md-4 user_info">
-               hello
+                {userData && <UserInfo userData={userData} />}
+
+              <h1> hello</h1>
             </div>
             <div className="col-md-8">
                 {props.location.state.username}
