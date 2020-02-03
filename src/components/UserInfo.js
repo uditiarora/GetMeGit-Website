@@ -15,8 +15,8 @@ const UserInfo = ({userData}) => {
                 {userData.name && <h1>{userData.name}</h1>}
 
                 {userData.login && (
-                <h2>
-                    <a href={userData.html_url} target="_blank" rel="noopener noreferrer">
+                <h2 >
+                    <a href={userData.html_url} target="_blank" rel="noopener noreferrer" className="user_url">
                     @{userData.login}
                     </a>
                 </h2>
@@ -25,21 +25,21 @@ const UserInfo = ({userData}) => {
                 <div className="info">
                 {userData.company && (
                     <span className="info__item">
-                    <Octicon icon={Briefcase} size="small" />
+                    <Octicon icon={Briefcase} size="small" className="logo" />
                     {userData.company}
                     </span>
                 )}
 
                 {userData.location && (
                     <span className="info__item">
-                    <Octicon icon={Location} size="small" />
+                    <Octicon icon={Location} size="small" className="logo"/>
                     {userData.location}
                     </span>
                 )}
 
                 {userData.created_at && (
                     <span className="info__item">
-                    <Octicon icon={Calendar} size="small" />
+                    <Octicon icon={Calendar} size="small" className="logo"/>
                     Joined{' '}
                     {new Date(userData.created_at).toLocaleDateString('en-US', {
                         month: 'long',

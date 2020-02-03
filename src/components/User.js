@@ -78,7 +78,6 @@ const User = props => {
             <div className="col-md-4 user_info">
                 {userData && <UserInfo userData={userData} />}
 
-              <h1> hello</h1>
             </div>
             <div className="col-md-8">
                 {props.location.state.username}
