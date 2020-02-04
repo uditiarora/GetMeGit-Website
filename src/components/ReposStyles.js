@@ -6,11 +6,14 @@ const ReposStyles = styled.div`
     display: flex;
     align-items: center;
     font-size: 1rem;
-    color: gray;
+    color: rgb(238, 236, 236);
 
     .label {
       margin: 0 1rem;
     }
+  }
+  h3{
+    margin: 2rem;
   }
   .repo-list {
     ul {
@@ -26,7 +29,7 @@ const ReposStyles = styled.div`
           flex-direction: column;
           padding: 2rem;
           height: 100%;
-          color: gray;
+          color: #950740;
           background-color: white;
           border-radius: 0.25rem;
           box-shadow: 0 10px 30px -15px rgba(0, 0, 0, 0.2);
@@ -41,7 +44,7 @@ const ReposStyles = styled.div`
             overflow: hidden;
             white-space: nowrap;
             text-overflow: ellipsis;
-            color: gray;
+            color: #c3073f;
             margin-bottom: 0.75rem;
             font-size: 20px;
             font-family: monospace;
@@ -74,7 +77,7 @@ const ReposStyles = styled.div`
             display: flex;
             justify-content: space-between;
             font-size: 13px;
-            color: gray;
+            color: #6f2232;
 
             &--left {
               flex-grow: 1;

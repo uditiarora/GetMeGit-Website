@@ -6,20 +6,20 @@ const DropdownStyles = styled.div`
   font-size: 10px;
   font-weight: 400;
 
+  
   .dropdown__button {
     display: flex;
     justify-content: space-between;
     align-items: center;
     font-size: 14px;
-    color: blue;
-    height: 20px;
+    color: #950750;
     background-color: transparent;
     border: 1px solid rgba(0, 118, 255, 0.1);
     border-radius: 5px;
 
     &:hover,
     &:focus {
-      color: blue;
+      color: #4e4e50;
       background: rgba(0, 118, 255, 0.1);
       border-color: rgba(0, 118, 255, 0.1);
     }
@@ -40,7 +40,7 @@ const DropdownStyles = styled.div`
     box-shadow: 0 5px 30px -15px rgba(0, 0, 0, 0.2);
     opacity: 0;
     visibility: hidden;
-    background-color: white;
+    background-color: rgb(238, 236, 236);
     list-style-type: none;
 
   }
@@ -49,7 +49,7 @@ const DropdownStyles = styled.div`
     transition: all 0.2s ease-in-out;
     &:hover,
     &:focus {
-      background-color: blue;
+      background-color: rgb(238, 236, 236);
     }
     &:first-of-type {
       button {
@@ -64,7 +64,7 @@ const DropdownStyles = styled.div`
       }
     }
     button {
-      color: blue;
+      color: #950740;
       background: rgba(0, 118, 255, 0.1);
       padding: 10px 7px;
       width: 100%;

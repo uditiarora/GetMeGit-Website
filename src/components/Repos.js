@@ -12,7 +12,7 @@ const Repos = ({ repoData }) => {
     const [dropdownOpen, setDropdownOpen] = useState(false);
   
     const getTopRepos = type => {
-      const LIMIT = 6;
+      const LIMIT = 3;
       const map = {
         stars: 'stargazers_count',
         forks: 'forks_count',
@@ -52,7 +52,7 @@ const Repos = ({ repoData }) => {
             <div className="dropdown-wrapper">
               <DropdownStyles active={dropdownOpen}>
                 <button className="dropdown__button" onClick={() => toggleDropdown()}>
-                  <label>{sortType}</label>
+                  {sortType}
                   <Octicon icon={TriangleDown} />
                 </button>
                 <ul className="dropdown__list">
