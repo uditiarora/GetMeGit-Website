@@ -27,10 +27,11 @@ const buildScales = axes => {
 
 const buildLegend = legend => {
   const leg = {
-    position: 'right',
+    position: 'bottom',
     labels: {
       fontFamily: 'Inter, system, -apple-system, BlinkMacSystemFont, Roboto, Segoe UI, Arial, sans-serif',
       fontSize: 8,
+      boxWidth: 10
     },
   };
   return legend ? leg : null;
@@ -42,7 +43,7 @@ const buildChart = config => {
   return new Chart(ctx, {
     type: chartType,
     responsive: true,
-    maintainAspectRatio: false,
+    maintainAspectRatio: true,
     data: {
       labels,
       datasets: [
