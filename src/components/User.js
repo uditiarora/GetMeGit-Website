@@ -3,6 +3,7 @@ import '../css/user.css';
 import GhPolyglot from 'gh-polyglot';
 import UserInfo from './UserInfo';
 import Charts from './Charts';
+import Repos from './Repos';
 const User = props => {
     const username = props.location.state.username;
     const [userData, setUserData] = useState(null);
@@ -82,6 +83,7 @@ const User = props => {
             </div>
             <div className="col-md-8 second_div">
                 {langData && repoData && <Charts langData={langData} repoData={repoData} />}
+                {repoData && <Repos repoData={repoData} />}
             </div>
         </div>
             
