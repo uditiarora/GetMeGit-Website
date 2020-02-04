@@ -1,0 +1,18 @@
+.row_1{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+}
+.chart {
+    background-color: rgb(238, 236, 236);
+    margin: 2rem;
+    padding: 2rem;
+    border-radius: 0.25rem;
+    box-shadow: 0 5px 30px -15px rgba(26, 25, 25, 0.2);   
+    
+}
+p {
+    color: gray;
+}
+h3 {
+    font-size: 1.5rem;
+}
