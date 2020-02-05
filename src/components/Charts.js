@@ -84,7 +84,7 @@ const Charts = ({ langData, repoData }) => {
       }
     }, []);
   
-    const chartSize = 200;
+    const chartSize = 100;
     const langChartError = !(langChartData && langChartData.length > 0);
     const starChartError = !(starChartData && starChartData.length > 0);
     const thirdChartError = !(thirdChartData && thirdChartData.length > 0);
