@@ -2,7 +2,7 @@
   "name": "getmegit-website",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://getmegit-website.now.sh/",
+  "homepage": "https://getmegit-website-3x85r4ufe.now.sh/",
   "dependencies": {
     "@primer/octicons-react": "^9.1.1",
     "@testing-library/jest-dom": "^4.2.4",
