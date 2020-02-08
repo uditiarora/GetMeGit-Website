@@ -11,7 +11,7 @@ const DropdownStyles = styled.div`
     display: flex;
     justify-content: space-between;
     align-items: center;
-    font-size: 14px;
+    font-size: 20px;
     color: #950750;
     background-color: transparent;
     border: 1px solid rgba(0, 118, 255, 0.1);

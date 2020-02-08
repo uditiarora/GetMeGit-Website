@@ -3,7 +3,7 @@
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
 }
 .chart {
-    background-color: rgb(238, 236, 236);
+    background-color: white;
     margin: 2rem;
     padding: 2rem;
     border-radius: 0.25rem;
@@ -11,7 +11,7 @@
     
 }
 p {
-    color: gray;
+    color: black;
 }
 h3 {
     font-size: 1.5rem;

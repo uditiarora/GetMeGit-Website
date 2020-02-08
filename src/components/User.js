@@ -76,6 +76,7 @@ const User = props => {
     }, []);
 
     return(
+      <div className="container-fluid">
         <div className="row">
             <div className="col-md-4 user_info">
                 {userData && <UserInfo userData={userData} />}
@@ -86,6 +87,8 @@ const User = props => {
                 {repoData && <Repos repoData={repoData} />}
             </div>
         </div>
+      </div>
+        
             
     );
     
