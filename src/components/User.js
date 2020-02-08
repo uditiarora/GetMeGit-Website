@@ -77,18 +77,24 @@ const User = props => {
 
     return(
       <div className="container-fluid">
-        <div className="row">
-            <div className="col-md-4 user_info">
-                {userData && <UserInfo userData={userData} />}
+        {error && error.active ? (
+          <div>User does not exist</div>
+        ) : (
+          <>          
+            <div className="row">
+                <div className="col-md-4 user_info">
+                    {userData && <UserInfo userData={userData} />}
 
+                </div>
+                <div className="col-md-8 second_div">
+                    {langData && repoData && <Charts langData={langData} repoData={repoData} />}
+                    {repoData && <Repos repoData={repoData} />}
+                </div>
             </div>
-            <div className="col-md-8 second_div">
-                {langData && repoData && <Charts langData={langData} repoData={repoData} />}
-                {repoData && <Repos repoData={repoData} />}
-            </div>
-        </div>
+          </>
+      )}
+      
       </div>
-        
             
     );
     
