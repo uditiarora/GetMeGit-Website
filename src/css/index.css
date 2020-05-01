@@ -3,12 +3,14 @@
     background-color: black;
     background-image: linear-gradient(black 0%, rgb(49, 48, 48) 100%);
     color: rgb(245, 237, 237);
-    margin: auto;
+    justify-content: center;
 }
 .index_div {
-    display: flex;
     justify-content: center;
+    display: flex;
     height: 50vh;
+    width: 600px;
+    margin: 0 auto;
 }
 
 form {
@@ -49,7 +51,10 @@ input {
 }
 .cont{
     height: 50vh;
-    width: 100%;
+    width: 600px;
+    margin: 0 auto;
+    z-index: -100;
+
 }
 .conta {
     --size: 30vh;
@@ -62,16 +67,12 @@ input {
     --rotatePivot: 0deg;
     --fill: #950740;
     --distance: 20rem;
-    position: absolute;
-    left: 50%;
-    transform: translate(-50%, 0%);
     height: var(--size);
     width: calc(var(--size) + var(--distance));
   }
   .circle {
-    position: absolute;
-    top: 0;
-    left: 0;
+    position: fixed;
+    
     width: var(--size);
     stroke: white;
     stroke-width: 5;
