@@ -1,16 +1,11 @@
-.main_Index_div{
-    height: 100vh;
+.index_div {
+    display: flex;
+    justify-content: center;
     background-color: black;
     background-image: linear-gradient(black 0%, rgb(49, 48, 48) 100%);
     color: rgb(245, 237, 237);
-    justify-content: center;
-}
-.index_div {
-    justify-content: center;
-    display: flex;
-    height: 50vh;
-    width: 600px;
-    margin: 0 auto;
+    height: 100vh;
+    margin: auto;
 }
 
 form {
@@ -49,77 +44,3 @@ input {
     font-weight: 400;
     text-align: center;
 }
-.cont{
-    height: 50vh;
-    width: 600px;
-    margin: 0 auto;
-    z-index: -100;
-
-}
-.conta {
-    --size: 30vh;
-    --speed: 5s;
-    --delay: 150ms;
-    --ease: cubic-bezier(0.48, 0, 0.48, 1);
-    --scaleStart: 0.8;
-    --scaleEnd: -1;
-    --rotate: 180deg;
-    --rotatePivot: 0deg;
-    --fill: #950740;
-    --distance: 20rem;
-    height: var(--size);
-    width: calc(var(--size) + var(--distance));
-  }
-  .circle {
-    position: fixed;
-    
-    width: var(--size);
-    stroke: white;
-    stroke-width: 5;
-    fill: var(--fill);
-    animation: circleMove var(--speed) var(--ease) infinite alternate-reverse;
-  }
-  .circle:nth-child(1) {
-    animation-delay: calc((var(--speed) * -1) - -1 * var(--delay) - 2100ms);
-    opacity: 1;
-    stroke-dasharray: 0,0;
-    transform: translateX(0) scale(var(--scaleStart));
-  }
-  .circle:nth-child(2) {
-    animation-delay: calc((var(--speed) * -1) - -2 * var(--delay) - 2100ms);
-    opacity: 0.7;
-    stroke-dasharray: 30;
-    transform: translateX(0) scale(var(--scaleStart));
-  }
-  .circle:nth-child(3) {
-    animation-delay: calc((var(--speed) * -1) - -3 * var(--delay) - 2100ms);
-    opacity: 0.5;
-      stroke-dasharray: 25;
-    transform: translateX(0) scale(var(--scaleStart));
-  }
-  .circle:nth-child(4) {
-    animation-delay: calc((var(--speed) * -1) - -4 * var(--delay) - 2100ms);
-    opacity: 0.3;
-    stroke-dasharray: 20;
-    transform: translateX(0) scale(var(--scaleStart));
-  }
-  .circle:nth-child(5) {
-    animation-delay: calc((var(--speed) * -1) - -5 * var(--delay) - 2100ms);
-    opacity: 0.1;
-    stroke-dasharray: 15;
-    transform: translateX(0) scale(var(--scaleStart));
-  }
-  
-  @keyframes circleMove {
-    from {
-      transform: translateX(0) scale(var(--scaleStart))
-        rotate(calc(0deg + var(--rotatePivot)));
-      filter: drop-shadow(3px 0px 0px rgba(153, 0, 0, 0.5));
-    }
-    to {
-      transform: translateX(var(--distance)) scale(var(--scaleEnd))
-        rotate(calc(var(--rotate) + var(--rotatePivot)));
-      filter: drop-shadow(1px 0px 0px rgba(153, 0, 0, 0.8));
-    }
-  }
-  
